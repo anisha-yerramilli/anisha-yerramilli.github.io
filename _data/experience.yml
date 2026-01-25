@@ -1,0 +1,22 @@
+- company: Affinity.co
+  role: Customer Success Manager
+  location: Mountain View, CA
+  period: Present
+  current: true
+  description: "Driving customer success and retention for a leading relationship intelligence platform."
+  highlights:
+    - Managing a portfolio of B2B clients
+    - Developing proactive engagement strategies
+    - Identifying process improvements
+    - Cross-functional collaboration
+
+- company: Engage3
+  role: Customer Success Professional
+  location: Davis, CA
+  period: Previous
+  current: false
+  description: "Built strong client relationships in the DaaS space."
+  highlights:
+    - Earned Growth-Focused Mindset Certificate (March 2024)
+    - Demonstrated initiative and accountability
+    - Implemented process improvements

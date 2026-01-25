@@ -1,0 +1,23 @@
+<header class="site-header">
+  <div class="container">
+    <a href="{{ '/' | relative_url }}" class="site-logo">
+      <span class="logo-text">Anisha Yerramilli</span>
+    </a>
+
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="site-nav" role="navigation">
+      <ul class="nav-list">
+        {% for item in site.data.navigation %}
+        <li class="nav-item">
+          <a href="{{ item.link | relative_url }}" class="nav-link {% if page.url == item.link %}active{% endif %}">
+            {{ item.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

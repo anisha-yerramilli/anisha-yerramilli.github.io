@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="project-detail">
+  <div class="container">
+    <header class="project-header">
+      <a href="{{ '/projects' | relative_url }}" class="back-link">&larr; Back to Projects</a>
+      <h1 class="project-title">{{ page.title }}</h1>
+      {% if page.year %}
+      <p class="project-year">{{ page.year }}</p>
+      {% endif %}
+    </header>
+
+    {% if page.image %}
+    <div class="project-hero">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="project-hero-image">
+    </div>
+    {% endif %}
+
+    <div class="project-content">
+      {{ content }}
+    </div>
+
+    {% if page.tags %}
+    <div class="project-tags">
+      {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>

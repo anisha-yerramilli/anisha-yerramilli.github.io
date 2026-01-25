@@ -1,0 +1,45 @@
+- name: fusion-documentary
+  title: "Fusion Documentary"
+  description: "A documentary exploring the beautiful blending of Indian and American cultures through personal interviews and storytelling."
+  image: /assets/images/projects/fusion.jpg
+  tags:
+    - Documentary
+    - Storytelling
+    - Cultural
+    - Creative
+  year: "2015-2016"
+  featured: true
+  link: "#"
+
+- name: customer-success-framework
+  title: "Customer Success Framework"
+  description: "Developed a proactive engagement framework to improve client retention and satisfaction at scale."
+  image: /assets/images/projects/cs-framework.jpg
+  tags:
+    - Customer Success
+    - Process Improvement
+    - B2B
+  year: "2023"
+  featured: true
+
+- name: web-design-projects
+  title: "Web Design Projects"
+  description: "Collection of web design work from university coursework, exploring modern design principles and user experience."
+  image: /assets/images/projects/web-design.jpg
+  tags:
+    - Web Design
+    - HTML/CSS
+    - UX
+  year: "2019-2020"
+  featured: false
+
+- name: data-structures-cpp
+  title: "Data Structures Implementation"
+  description: "Comprehensive implementation of core data structures including trees, graphs, and hash tables in C++."
+  image: /assets/images/projects/data-structures.jpg
+  tags:
+    - C++
+    - Algorithms
+    - Computer Science
+  year: "2018"
+  featured: false

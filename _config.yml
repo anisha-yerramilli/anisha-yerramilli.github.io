@@ -1,0 +1,34 @@
+title: Anisha Yerramilli
+description: Customer Success Manager & Creative
+url: "https://anisha-yerramilli.github.io"
+baseurl: ""
+
+# Author info
+author:
+  name: Anisha Yerramilli
+  email: ""
+  linkedin: "https://www.linkedin.com/in/anisha-yerramilli/"
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+# Collections for projects
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+
+# Plugins (GitHub Pages compatible)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+  - vendor
