@@ -1,11 +1,51 @@
 ---
 layout: page
 title: Projects
-subtitle: A collection of my work across technology and creativity
+subtitle: A collection of my work across UX, graphic design, and 3D art
 ---
 
-<div class="projects-grid">
-  {% for project in site.data.projects %}
-    {% include project-card.html project=project %}
-  {% endfor %}
-</div>
+{% assign ux_projects = site.data.projects | where: "category", "ux" %}
+{% assign graphic_projects = site.data.projects | where: "category", "graphic" %}
+{% assign art_projects = site.data.projects | where: "category", "art" %}
+
+{% if ux_projects.size > 0 %}
+<section class="project-section">
+  <header class="project-section-header">
+    <h2 class="project-section-title">UX Projects</h2>
+    <p class="project-section-subtitle">Case studies in user research, wireframing, and product design</p>
+  </header>
+  <div class="projects-grid projects-grid-featured">
+    {% for project in ux_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if graphic_projects.size > 0 %}
+<section class="project-section">
+  <header class="project-section-header">
+    <h2 class="project-section-title">Graphic Design</h2>
+    <p class="project-section-subtitle">Logos, flyers, and visual design work</p>
+  </header>
+  <div class="projects-grid">
+    {% for project in graphic_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if art_projects.size > 0 %}
+<section class="project-section">
+  <header class="project-section-header">
+    <h2 class="project-section-title">3D Art</h2>
+    <p class="project-section-subtitle">Modeling, animation, and sculpture in Autodesk Maya</p>
+  </header>
+  <div class="projects-grid">
+    {% for project in art_projects %}
+      {% include project-card.html project=project %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

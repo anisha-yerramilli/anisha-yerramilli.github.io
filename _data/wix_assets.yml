@@ -1,0 +1,125 @@
+# Asset manifest for Wix portfolio assets
+# All files have been renamed to human-readable names
+
+homepage:
+  - filename: "hero-3d-chess.png"
+    name: "hero-image"
+    description: "Homepage hero/banner image - 3D chess set"
+  - filename: "logo-ay.png"
+    name: "logo"
+    description: "AY monogram logo"
+
+about:
+  - filename: "profile-photo.jpg"
+    name: "profile-photo"
+    description: "Anisha's profile photo"
+
+ux_projects:
+  - filename: "ux-project-1.png"
+    name: "ux-project-1"
+  - filename: "ux-project-2.png"
+    name: "ux-project-2"
+  - filename: "ux-project-3.jpg"
+    name: "ux-project-3"
+
+design_projects:
+  - filename: "design-1.png"
+  - filename: "design-2.png"
+  - filename: "design-3.png"
+  - filename: "design-4.png"
+  - filename: "design-5.png"
+  - filename: "design-6.png"
+  - filename: "design-7.png"
+  - filename: "design-8.png"
+
+logo_designs:
+  - filename: "logo-design-1.jpg"
+  - filename: "logo-design-2.png"
+  - filename: "logo-design-3.png"
+
+graphic_design:
+  - filename: "graphic-1.png"
+  - filename: "graphic-2.png"
+
+art_3d:
+  - filename: "3d-art-1.jpg"
+  - filename: "3d-art-2.jpg"
+  - filename: "3d-art-3.jpg"
+  - filename: "3d-art-4.jpg"
+  - filename: "3d-art-5.jpg"
+  - filename: "3d-art-6.jpg"
+
+videos:
+  - filename: "3d-art-1.mp4"
+    wix_id: "487b9e_4a3d75f16ccf482298d66c6d4aeb0d1e"
+    description: "3D art animation 1 (2.4s, 720p)"
+  - filename: "3d-art-2.mp4"
+    wix_id: "487b9e_726ca7a0d8b541fea630f4651bfdacd5"
+    description: "3D art animation 2 (4.3s, 720p)"
+
+itw_project:
+  - filename: "itw-hero.jpg"
+    name: "hero"
+  - filename: "itw-01.png"
+  - filename: "itw-02.png"
+  - filename: "itw-03.jpg"
+  - filename: "itw-04.png"
+  - filename: "itw-05.png"
+  - filename: "itw-06.png"
+  - filename: "itw-07.png"
+  - filename: "itw-08.jpg"
+  - filename: "itw-09.png"
+  - filename: "itw-10.png"
+  - filename: "itw-11.png"
+  - filename: "itw-12.png"
+  - filename: "itw-13.png"
+  - filename: "itw-14.png"
+
+malala_fund:
+  - filename: "malala-hero.png"
+    name: "hero"
+    description: "Site architecture diagram"
+  - filename: "malala-01.png"
+  - filename: "malala-02.png"
+  - filename: "malala-03.png"
+  - filename: "malala-04.png"
+  - filename: "malala-05.jpg"
+  - filename: "malala-06.png"
+  - filename: "malala-07.png"
+  - filename: "malala-08.png"
+  - filename: "malala-09.png"
+  - filename: "malala-10.png"
+  - filename: "malala-11.png"
+  - filename: "malala-12.png"
+  - filename: "malala-13.png"
+  - filename: "malala-14.png"
+
+joinin_project:
+  - filename: "joinin-hero.png"
+    name: "hero"
+    description: "App architecture diagram"
+  - filename: "joinin-01.png"
+  - filename: "joinin-02.png"
+  - filename: "joinin-03.png"
+  - filename: "joinin-04.png"
+  - filename: "joinin-05.png"
+  - filename: "joinin-06.png"
+  - filename: "joinin-07.png"
+  - filename: "joinin-08.png"
+  - filename: "joinin-09.png"
+  - filename: "joinin-10.png"
+  - filename: "joinin-11.png"
+  - filename: "joinin-12.png"
+  - filename: "joinin-13.png"
+  - filename: "joinin-14.png"
+  - filename: "joinin-15.png"
+  - filename: "joinin-16.png"
+  - filename: "joinin-17.png"
+  - filename: "joinin-18.png"
+  - filename: "joinin-19.png"
+  - filename: "joinin-20.png"
+  - filename: "joinin-21.png"
+  - filename: "joinin-22.png"
+  - filename: "joinin-23.png"
+  - filename: "joinin-24.png"
+  - filename: "joinin-25.png"

@@ -1,20 +1,28 @@
-<article class="project-card">
-  <div class="project-card-image">
-    {% if include.project.image %}
-    <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }}">
-    {% else %}
-    <div class="placeholder-image" style="width: 100%; height: 100%;">
-      <span>{{ include.project.title | truncate: 20 }}</span>
+<a href="{{ include.project.link | relative_url }}" class="project-card-link">
+  <article class="project-card">
+    <div class="project-card-image">
+      {% if include.project.image %}
+      <img src="{{ include.project.image | relative_url }}" alt="{{ include.project.title }}">
+      {% else %}
+      <div class="placeholder-image" style="width: 100%; height: 100%;">
+        <span>{{ include.project.title | truncate: 20 }}</span>
+      </div>
+      {% endif %}
+      <div class="project-card-overlay">
+        <span class="project-card-cta">View Case Study &rarr;</span>
+      </div>
     </div>
-    {% endif %}
-  </div>
-  <div class="project-card-content">
-    <h3 class="project-card-title">{{ include.project.title }}</h3>
-    <p class="project-card-description">{{ include.project.description }}</p>
-    <div class="project-card-tags">
-      {% for tag in include.project.tags %}
-      <span class="tag">{{ tag }}</span>
-      {% endfor %}
+    <div class="project-card-content">
+      {% if include.project.year %}
+      <p class="project-card-year">{{ include.project.year }}</p>
+      {% endif %}
+      <h3 class="project-card-title">{{ include.project.title }}</h3>
+      <p class="project-card-description">{{ include.project.description }}</p>
+      <div class="project-card-tags">
+        {% for tag in include.project.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</article>
+  </article>
+</a>

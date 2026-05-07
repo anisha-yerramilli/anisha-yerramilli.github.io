@@ -1,67 +1,63 @@
 ---
 layout: page
 title: About Me
-subtitle: Customer Success Manager with a passion for technology and creativity
+subtitle: UX Designer with a passion for creating meaningful digital experiences
 ---
 
-<div class="about-content">
-  <div class="about-image">
-    <img src="{{ '/assets/images/profile/ay.jpg' | relative_url }}" alt="Anisha Yerramilli">
-  </div>
+<div class="about-content" markdown="1">
+<div class="about-image" markdown="1">
 
-  <div class="about-text">
+![Anisha Yerramilli]({{ '/assets/images/profile/ay.jpg' | relative_url }})
 
-## My Journey
+</div>
 
-I'm a Customer Success Manager at Affinity.co based in the San Francisco Bay Area, with over 5 years of experience in B2B technology across SaaS and DaaS platforms. Known for being proactive, I thrive on driving process improvements and building lasting relationships with clients.
+<div class="about-text" markdown="1">
 
-My journey in tech began at Santa Clara University (2016-2020), where I immersed myself in computer science coursework including Data Structures, Object-Oriented Programming, Operating Systems, Computer Graphics, and Web Design. This technical foundation has been invaluable in understanding the products I support and the challenges my clients face.
+I graduated in June 2020 from Santa Clara University with a B.S. in Computer Science and a minor in Studio Art. I love all forms of art especially UX design, photography, filmmaking and watercolor painting. Some of my favorite artists include Claude Monet, Vincent Van Gogh, and Georgia O'Keeffe. I'm very passionate about mindfulness; I meditate every morning. I enjoy hiking, dancing, yoga, and trying new foods.
 
-## What I Do
+Computer science and art are both key components of our society. Computer science gave me exposure to a complex discipline that allowed out-of-the-box thinking. This major allowed me to express my creativity in a new way since there is never just one correct way to write an algorithm. Similarly, there are endless possibilities with design.
 
-As a Customer Success Manager, I focus on ensuring clients achieve their goals while maximizing the value they get from our platform. I believe in proactive communication, understanding client needs deeply, and finding creative solutions to complex problems.
-
-## Beyond Work
-
-When I'm not helping clients succeed, you can find me exploring my creative side through photography and storytelling. I'm particularly passionate about documenting cultural experiences and perspectives, as showcased in my "Fusion" documentary project that explored the blending of Indian and American cultures.
-
-  </div>
+</div>
 </div>
 
 ## Skills
 
-<div class="skills-grid">
-  <div class="skill-category">
-    <h4>Technical</h4>
-    <ul>
-      <li>Data Structures & Algorithms</li>
-      <li>C++ / Python</li>
-      <li>Web Design & Development</li>
-      <li>SaaS & DaaS Platforms</li>
-      <li>Data Analysis</li>
-    </ul>
-  </div>
+<div class="skills-grid" markdown="1">
+<div class="skill-category" markdown="1">
 
-  <div class="skill-category">
-    <h4>Professional</h4>
-    <ul>
-      <li>Customer Success Management</li>
-      <li>Process Improvement</li>
-      <li>Client Relationship Building</li>
-      <li>Problem Solving</li>
-      <li>Cross-functional Collaboration</li>
-    </ul>
-  </div>
+#### Design
 
-  <div class="skill-category">
-    <h4>Creative</h4>
-    <ul>
-      <li>Photography</li>
-      <li>Documentary Filmmaking</li>
-      <li>Storytelling</li>
-      <li>Content Creation</li>
-    </ul>
-  </div>
+- UX/UI Design
+- Information Architecture
+- Wireframing & Prototyping
+- Visual Design
+- Design Systems
+
+</div>
+
+<div class="skill-category" markdown="1">
+
+#### Technical
+
+- HTML/CSS/JavaScript
+- Figma & Adobe XD
+- Adobe Creative Suite
+- 3D Modeling (Blender)
+- Responsive Design
+
+</div>
+
+<div class="skill-category" markdown="1">
+
+#### Creative
+
+- 3D Art & Rendering
+- Graphic Design
+- Logo & Brand Design
+- Photography
+- Storytelling
+
+</div>
 </div>
 
 ## Education
@@ -69,11 +65,10 @@ When I'm not helping clients succeed, you can find me exploring my creative side
 **Santa Clara University** (2016 - 2020)
 
 Relevant Coursework:
+- Web Design
+- Computer Graphics
 - Data Structures (C++)
 - Object-Oriented Programming
-- Operating Systems
-- Computer Graphics
+- Human-Computer Interaction
 - Linear Algebra
 - Discrete Mathematics
-- Probability & Statistics
-- Web Design

@@ -7,11 +7,14 @@
 - name: Projects
   link: /projects
 
-- name: Experience
-  link: /experience
+- name: Creative
+  link: /creative
 
 - name: Photography
   link: /photography
+
+- name: Experience
+  link: /experience
 
 - name: Contact
   link: /contact

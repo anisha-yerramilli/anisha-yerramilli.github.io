@@ -23,56 +23,47 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Lightbox for Photography Gallery
+// Lightbox for galleries (photography, project galleries)
 document.addEventListener('DOMContentLoaded', function() {
-  const photoItems = document.querySelectorAll('.photo-item');
+  const triggers = document.querySelectorAll('.photo-item img, .project-gallery img.gallery-image');
 
-  if (photoItems.length > 0) {
-    // Create lightbox element
-    const lightbox = document.createElement('div');
-    lightbox.className = 'lightbox';
-    lightbox.innerHTML = `
-      <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
-      <div class="lightbox-content">
-        <img src="" alt="">
-      </div>
-    `;
-    document.body.appendChild(lightbox);
+  if (triggers.length === 0) return;
 
-    const lightboxImg = lightbox.querySelector('img');
-    const closeBtn = lightbox.querySelector('.lightbox-close');
+  const lightbox = document.createElement('div');
+  lightbox.className = 'lightbox';
+  lightbox.innerHTML = `
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img src="" alt="">
+    </div>
+  `;
+  document.body.appendChild(lightbox);
 
-    // Open lightbox
-    photoItems.forEach(item => {
-      item.addEventListener('click', function() {
-        const img = this.querySelector('img');
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-        lightbox.classList.add('active');
-        document.body.style.overflow = 'hidden';
-      });
+  const lightboxImg = lightbox.querySelector('img');
+  const closeBtn = lightbox.querySelector('.lightbox-close');
+
+  triggers.forEach(img => {
+    img.addEventListener('click', function(e) {
+      e.preventDefault();
+      lightboxImg.src = this.src;
+      lightboxImg.alt = this.alt;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
     });
+  });
 
-    // Close lightbox
-    closeBtn.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', function(e) {
-      if (e.target === lightbox) {
-        closeLightbox();
-      }
-    });
-
-    // Close on Escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-        closeLightbox();
-      }
-    });
-
-    function closeLightbox() {
-      lightbox.classList.remove('active');
-      document.body.style.overflow = '';
-    }
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
   }
+
+  closeBtn.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', function(e) {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+  });
 });
 
 // Smooth scroll for anchor links

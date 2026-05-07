@@ -2,14 +2,42 @@
 layout: default
 ---
 
+{% assign all_projects = site.data.projects %}
+{% assign project_slug = page.url | split: '/' | last | remove: '.html' %}
+{% if project_slug == '' %}{% assign project_slug = page.url | split: '/' | slice: -2, 1 | first %}{% endif %}
+
+{% assign current_index = -1 %}
+{% for proj in all_projects %}
+  {% if proj.name == project_slug %}{% assign current_index = forloop.index0 %}{% endif %}
+{% endfor %}
+
+{% assign prev_project = nil %}
+{% assign next_project = nil %}
+{% if current_index > 0 %}
+  {% assign prev_index = current_index | minus: 1 %}
+  {% assign prev_project = all_projects[prev_index] %}
+{% endif %}
+{% if current_index >= 0 %}
+  {% assign next_index = current_index | plus: 1 %}
+  {% if next_index < all_projects.size %}
+    {% assign next_project = all_projects[next_index] %}
+  {% endif %}
+{% endif %}
+
 <article class="project-detail">
   <div class="container">
     <header class="project-header">
       <a href="{{ '/projects' | relative_url }}" class="back-link">&larr; Back to Projects</a>
       <h1 class="project-title">{{ page.title }}</h1>
-      {% if page.year %}
-      <p class="project-year">{{ page.year }}</p>
-      {% endif %}
+      <div class="project-meta">
+        {% if page.year %}<span class="project-meta-item"><span class="project-meta-label">Year</span>{{ page.year }}</span>{% endif %}
+        {% if page.tags %}
+        <span class="project-meta-item">
+          <span class="project-meta-label">Tools</span>
+          {{ page.tags | join: " · " }}
+        </span>
+        {% endif %}
+      </div>
     </header>
 
     {% if page.image %}
@@ -22,12 +50,21 @@ layout: default
       {{ content }}
     </div>
 
-    {% if page.tags %}
-    <div class="project-tags">
-      {% for tag in page.tags %}
-      <span class="tag">{{ tag }}</span>
-      {% endfor %}
-    </div>
+    {% if prev_project or next_project %}
+    <nav class="project-nav" aria-label="Project navigation">
+      {% if prev_project %}
+      <a href="{{ prev_project.link | relative_url }}" class="project-nav-link project-nav-prev">
+        <span class="project-nav-direction">&larr; Previous</span>
+        <span class="project-nav-title">{{ prev_project.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+      {% if next_project %}
+      <a href="{{ next_project.link | relative_url }}" class="project-nav-link project-nav-next">
+        <span class="project-nav-direction">Next &rarr;</span>
+        <span class="project-nav-title">{{ next_project.title }}</span>
+      </a>
+      {% else %}<span></span>{% endif %}
+    </nav>
     {% endif %}
   </div>
 </article>
