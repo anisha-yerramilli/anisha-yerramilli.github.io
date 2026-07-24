@@ -13,7 +13,7 @@ subtitle: UX Designer with a passion for creating meaningful digital experiences
 
 <div class="about-text" markdown="1">
 
-I graduated in June 2020 from Santa Clara University with a B.S. in Computer Science and a minor in Studio Art. I love all forms of art especially UX design, photography, filmmaking and watercolor painting. Some of my favorite artists include Claude Monet, Vincent Van Gogh, and Georgia O'Keeffe. I'm very passionate about mindfulness; I meditate every morning. I enjoy hiking, dancing, yoga, and trying new foods.
+I graduated cum laude in June 2020 from Santa Clara University with a B.S. in Computer Science and a minor in Studio Art. I love all forms of art especially UX design, photography, filmmaking and watercolor painting. Some of my favorite artists include Claude Monet, Vincent Van Gogh, and Georgia O'Keeffe. I'm very passionate about mindfulness; I meditate every morning. I enjoy hiking, dancing, yoga, and trying new foods.
 
 Computer science and art are both key components of our society. Computer science gave me exposure to a complex discipline that allowed out-of-the-box thinking. This major allowed me to express my creativity in a new way since there is never just one correct way to write an algorithm. Similarly, there are endless possibilities with design.
 
@@ -74,7 +74,7 @@ Computer science and art are both key components of our society. Computer scienc
 
 ## Education
 
-**Santa Clara University** (2016 - 2020)
+**Santa Clara University** (2016 - 2020) — B.S. in Computer Science, *cum laude*
 
 Relevant Coursework:
 - Web Design
