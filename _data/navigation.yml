@@ -4,6 +4,9 @@
 - name: About
   link: /about
 
+- name: Experience
+  link: /experience
+
 - name: Projects
   link: /projects
 
@@ -12,9 +15,6 @@
 
 - name: Photography
   link: /photography
-
-- name: Experience
-  link: /experience
 
 - name: Contact
   link: /contact
