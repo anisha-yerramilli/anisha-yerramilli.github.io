@@ -49,6 +49,18 @@ Computer science and art are both key components of our society. Computer scienc
 
 <div class="skill-category" markdown="1">
 
+#### Customer Success
+
+- Client Relationship Management
+- Onboarding & Training
+- Stakeholder Communication
+- Problem Solving & Escalation
+- Cross-Functional Collaboration
+
+</div>
+
+<div class="skill-category" markdown="1">
+
 #### Creative
 
 - 3D Art & Rendering

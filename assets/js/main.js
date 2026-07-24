@@ -33,20 +33,31 @@ document.addEventListener('DOMContentLoaded', function() {
   lightbox.className = 'lightbox';
   lightbox.innerHTML = `
     <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">&#10094;</button>
     <div class="lightbox-content">
       <img src="" alt="">
     </div>
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">&#10095;</button>
   `;
   document.body.appendChild(lightbox);
 
   const lightboxImg = lightbox.querySelector('img');
   const closeBtn = lightbox.querySelector('.lightbox-close');
+  const prevBtn = lightbox.querySelector('.lightbox-prev');
+  const nextBtn = lightbox.querySelector('.lightbox-next');
+  const items = Array.from(triggers);
+  let currentIndex = 0;
 
-  triggers.forEach(img => {
+  function showImage(index) {
+    currentIndex = (index + items.length) % items.length;
+    lightboxImg.src = items[currentIndex].src;
+    lightboxImg.alt = items[currentIndex].alt;
+  }
+
+  items.forEach((img, index) => {
     img.addEventListener('click', function(e) {
       e.preventDefault();
-      lightboxImg.src = this.src;
-      lightboxImg.alt = this.alt;
+      showImage(index);
       lightbox.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
@@ -58,11 +69,16 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   closeBtn.addEventListener('click', closeLightbox);
+  prevBtn.addEventListener('click', function() { showImage(currentIndex - 1); });
+  nextBtn.addEventListener('click', function() { showImage(currentIndex + 1); });
   lightbox.addEventListener('click', function(e) {
     if (e.target === lightbox) closeLightbox();
   });
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowLeft') showImage(currentIndex - 1);
+    else if (e.key === 'ArrowRight') showImage(currentIndex + 1);
   });
 });
 
