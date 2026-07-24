@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Experience
-subtitle: My professional journey in B2B technology
+subtitle: 💼 My professional journey in B2B technology
 ---
 
 <div class="experience-timeline">

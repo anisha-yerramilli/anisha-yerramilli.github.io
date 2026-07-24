@@ -20,12 +20,12 @@ Computer science and art are both key components of our society. Computer scienc
 </div>
 </div>
 
-## Skills
+## Skills 🚀
 
 <div class="skills-grid" markdown="1">
 <div class="skill-category" markdown="1">
 
-#### Design
+#### 🎨 Design
 
 - UX/UI Design
 - Information Architecture
@@ -37,7 +37,7 @@ Computer science and art are both key components of our society. Computer scienc
 
 <div class="skill-category" markdown="1">
 
-#### Technical
+#### 💻 Technical
 
 - HTML/CSS/JavaScript
 - Figma & Adobe XD
@@ -49,7 +49,7 @@ Computer science and art are both key components of our society. Computer scienc
 
 <div class="skill-category" markdown="1">
 
-#### Customer Success
+#### 🤝 Customer Success
 
 - Client Relationship Management
 - Onboarding & Training
@@ -61,7 +61,7 @@ Computer science and art are both key components of our society. Computer scienc
 
 <div class="skill-category" markdown="1">
 
-#### Creative
+#### ✨ Creative
 
 - 3D Art & Rendering
 - Graphic Design
@@ -72,7 +72,7 @@ Computer science and art are both key components of our society. Computer scienc
 </div>
 </div>
 
-## Education
+## Education 🎓
 
 **Santa Clara University** (2016 - 2020) — B.S. in Computer Science, *cum laude*
 

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-subtitle: Let's connect
+subtitle: 💌 Let's connect
 ---
 
 <div class="contact-content">
